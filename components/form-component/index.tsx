@@ -87,10 +87,16 @@ const FormComponent: React.FC<IProps> = ({ genre }) => {
         </div>
       )}
 
-      {genre === "login" && <Button type="submit">Giriş yap</Button>}
+      {genre === "login" && (
+        <Button className="mt-5" type="submit">
+          Giriş yap
+        </Button>
+      )}
 
-      <Link href={"/signup"}>
-        <Button className="w-full">Hesap oluştur</Button>
+      <Link href={"/create-account"}>
+        <Button className={`w-full ${genre === "login" ? "" : "mt-5"}`}>
+          Hesap oluştur
+        </Button>
       </Link>
     </form>
   );
