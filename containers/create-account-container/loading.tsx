@@ -9,7 +9,7 @@ const CreateAccountContainerLoading = () => {
         {Array(5)
           .fill(null)
           .map((_, index) => (
-            <Skeleton key={index} width={384} height={52} />
+            <Skeleton key={index} width={384} height={42} />
           ))}
       </div>
     </MyFragment>
